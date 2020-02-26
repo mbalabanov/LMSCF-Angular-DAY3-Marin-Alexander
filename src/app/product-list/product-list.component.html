@@ -1,1 +1,22 @@
-<p>product-list works!</p>
+<app-hero></app-hero>
+
+<div class="row">
+	<div class="col-12 text-center">
+		<h2>Our Products</h2>
+		<hr>
+		<div class="row">
+			<div class="col-3" *ngFor="let product of products; index as productId">
+				<a [routerLink]="['/products', productId]"><img class="img-fluid" src="{{ product.photo }}"></a>
+				<h4><a [routerLink]="['/products', productId]">{{ product.name }}</a></h4>
+				<h5>{{ product.price | currency}}</h5>
+				<p><a [routerLink]="['/products', productId]" class="btn btn-outline-warning">Details</a></p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-10 offset-1">
+				<p>5% Auto Ship - Sign up for Auto Ship and have products conveniently delivered to you at the frequency you choose! Save 5% on your initial order and 5% on recurring orders. Plus enjoy free shipping on orders over $49. Discounts will automatically apply at checkout once the customer has enrolled. Maximum value $150. Offer not valid on gift cards, gift certificates, previous purchases, or charitable donations and may not be valid on all merchandise. Offer may not be combined with other promotional offers or discounts. Terms and conditions of this offer are subject to change at the sole discretion of Pet Shop.</p>
+			</div>
+		</div>
+	</div>
+</div>

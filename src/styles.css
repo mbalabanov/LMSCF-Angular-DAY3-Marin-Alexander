@@ -3,5 +3,13 @@
 	background-image: url('assets/img/cat-dog.jpg');
 	background-size: cover;
 	height: 34rem;
+}
+
+#herobox h1 {
+	text-shadow: 0 0 6px black; 
+}
+
+#herobox p {
+	font-size: 2rem;
 	text-shadow: 0 0 6px black; 
 }

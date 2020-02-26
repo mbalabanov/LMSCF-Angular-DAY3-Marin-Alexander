@@ -1,1 +1,16 @@
-<p>product-details works!</p>
+
+<h2 class="text-center m-3">Product Details</h2>
+<p class="text-center"><a href="/" class="btn btn-outline-warning">Back to product list</a></p>
+<div class="row" *ngIf="product">
+	<div class="col-6">
+		<p><img src="{{ product.photo }}" class="img-fluid" alt="product.name"></p>
+	</div>
+	<div class="col-6">
+		<h3>{{ product.name }}</h3>
+		<div class="alert alert-warning" role="alert">
+			<h3>{{ product.price | currency }} per portion</h3>
+		</div>
+		<p class="mb-2">{{ product.description }}</p>
+		<p><button class="btn btn-warning btn-lg" role="button" (click)="addToCart(product)">Add to Cart</button></p>
+	</div>
+</div>
