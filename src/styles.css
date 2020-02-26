@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+#herobox {
+	background-image: url('assets/img/cat-dog.jpg');
+	background-size: cover;
+	height: 34rem;
+	text-shadow: 0 0 6px black; 
+}
