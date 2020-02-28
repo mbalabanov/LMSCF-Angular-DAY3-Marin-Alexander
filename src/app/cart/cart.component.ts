@@ -19,12 +19,28 @@ export class CartComponent implements OnInit {
 			name: '',
 			address: ''
 		});
+		total();
 	}
 
 	onSubmit(customerData) {
-		console.warn('Your order has been submitted', customerData);
+		window.alert('Your order has been submitted');
 		this.items = this.cartService.clearCart();
 		this.checkoutForm.reset();
 	}
+
+	clearCart() {
+		this.items = [];
+		return this.items;
+	}
+
+	total() {
+		var totalPrice = 0;
+		for(let item of this.items){
+			totalPrice += item.price;
+		};
+
+		console.log(totalPrice);
+	};
+
 
 }

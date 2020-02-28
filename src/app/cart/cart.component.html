@@ -1,12 +1,12 @@
-<div class="row my-4">
-	<div class="col-3">
-		<img src="assets/img/shopping.jpg" alt="Shopping Cart" class="img-fluid rounded">
-	</div>
-	<div class="col-4">
+<div class="row m-4">
+
+	<div class="col-8">
 		<div class="row border-bottom pb-4">
 			<div class="col-12">
 				<h3>Your Shopping Cart</h3>
-				<a href="/#productlisting" class="btn btn-outline-warning">Back to product list</a>
+				<a routerLink="/" class="btn btn-outline-warning">Back to product list</a>
+				<button class="btn btn-outline-danger ml-4" (click)="clearCart()">Clear cart</button>
+				<button class="btn btn-outline-primary ml-4" (click)="total()">Total</button>
 			</div>
 		</div>
 		<div class="cart-item row border-bottom" *ngFor="let item of items">
@@ -19,18 +19,20 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-4 border rounded p-4 ml-4">
-		<h3>Complete your Purchase</h3>
+
+	<div class="col-3 border rounded p-4 ml-4">
+		<h3>Your data</h3>
 		<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 			<p>
 				<label for="name">Name: </label><br>
 				<input id="name" type="text" formControlName="name">
 			</p>
 			<p>
-				<label for="address">Address: </label><br>
+				<label for="address">Delivery Address: </label><br>
 				<input id="address" type="text" formControlName="address">
 			</p>
 			<button class="btn btn-primary ml-2" type="submit">Purchase</button>
 		</form>
 	</div>
+
 </div>

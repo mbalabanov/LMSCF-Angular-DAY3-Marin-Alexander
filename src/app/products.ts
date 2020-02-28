@@ -10,13 +10,13 @@ export const products = [
 		name: 'Cat Food',
 		price: 3.99,
 		photo: 'assets/img/cat-food.jpg',
-		description: 'Elevate your cat\'s meals to the next level by offering her a bowl of Purina Fancy Feast Classic Pate Chicken Feast wet cat food. Each delicious serving is packed full of high-quality ingredients to create a 100% complete and balanced dish that provides all the nourishment your cat needs to keep her healthy and happy.'
+		description: 'Elevate your meals of your cat to the next level by offering her a bowl of Purina Fancy Feast Classic Pate Chicken Feast wet cat food. Each delicious serving is packed full of high-quality ingredients to create a 100% complete and balanced dish that provides all the nourishment your cat needs to keep her healthy and happy.'
 	},
 	{
 		name: 'Hamster Food',
 		price: 2.99,
 		photo: 'assets/img/hamster-food.jpg',
-		description: 'Oxbow Essentials Healthy Handfuls Hamster/Gerbil Food is the cornerstone of a complete, balanced diet you can feel good about serving your pet. From ideal weight and better digestion to dental health and more, this food promotes better and lasting health across the board.'
+		description: 'Oxbow Essentials Healthy Handfuls Hamster and Gerbil Food is the cornerstone of a complete, balanced diet you can feel good about serving your pet. From ideal weight and better digestion to dental health and more, this food promotes better and lasting health across the board.'
 	},
 	{
 		name: 'Fish Food',
